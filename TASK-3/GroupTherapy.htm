@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- External JavaScript -->
+  <script src="scripts.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+  <title>GroupTherapy</title>
+  <style>
+      /* Global Reset */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #FFDDF4;
+        color: #333;
+    }
+      main{
+        background-color: #FFDDF4;
+        font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+
+      }
+      /* Split layout container */
+      .split-layout {
+          display: flex;
+          height: 100vh; /* Adjust as needed */
+      }
+
+      /* Left side: Text content */
+      .text-content {
+          flex: 1; /* Take up remaining space */
+          padding: 20px; /* Adjust as needed */
+          margin-left: 15px;
+      }
+      .text-content h1{
+        margin-top: 30px;
+        font-size:40px;
+      }
+      .text-content p{
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .text-content a {
+          text-decoration: none;
+          color: inherit; /* Inherit text color */
+      }
+
+      /* Right side: Image */
+      .image-content {
+          flex: 1; /* Take up remaining space */
+      }
+
+      .image-content img {
+          width: 600px; /* Ensure the image fills its container */
+          height:500px; /* Ensure the image fills its container */
+          object-fit: cover; /* Ensure the image covers the container */
+          margin-top: 120PX;
+          margin-left: 10px;
+          border-radius: 10%;
+      }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Navigation menu -->
+    <nav>
+      <!-- Logo -->
+      <div class="health-logo"><a href="index.htm">
+        <h2>Health and Wellness</h2>
+        </a></div>
+      <!-- Menu items -->
+      <div class="health-menu">
+        <div class="health-menuitem"><a href="Nutrition.htm">Nutrition</a></div>
+        <div class="health-menuitem"><a href="Exercise.htm">Exercise</a></div>
+        <!-- Dropdown menu -->
+        <div class="health-menuitem health-dropdown"><a href="#">Mental Health</a><ion-icon name="arrow-dropdown"></ion-icon>
+          <div class="health-dropdown-content">
+            <!-- Mental Health items -->
+            <div class="health-dropdown-item"><a href="#">Mindfulness</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="Meditation.htm">Meditation</a></div>
+                <div class="health-submenu-item"><a href="Breathing.htm">Breathing Exercises</a></div>
+                <div class="health-submenu-item"><a href="Stress.htm">Stress Management</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Therapy</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="CBT.htm">Cognitive Behavioral Therapy</a></div>
+                <div class="health-submenu-item"><a href="GroupTherapy.htm">Group Therapy</a></div>
+                <div class="health-submenu-item"><a href="Therapist.htm">Find a Therapist</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Self-Care</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="Relaxation.htm">Relaxation Techniques</a></div>
+                <div class="health-submenu-item"><a href="Hobbies.htm">Hobbies</a></div>
+                <div class="health-submenu-item"><a href="Sleep.htm">Sleep Hygiene</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Emotional Well-being</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="Journaling.htm">Journaling</a></div>
+                <div class="health-submenu-item"><a href="Gratitude.htm">Gratitude Practices</a></div>
+                <div class="health-submenu-item"><a href="MindfulEating.htm">Mindful Eating</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Support Groups</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="OnlineGroups.htm">Online Communities</a></div>
+                <div class="health-submenu-item"><a href="LocalGroups.htm">Local Meetups</a></div>
+                <div class="health-submenu-item"><a href="PeerSupport.htm">Peer Support</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- More menu items... -->
+        <div class="health-menuitem"><a href="ContactUs.htm">Contact Us</a></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+  <!-- Split layout content -->
+  <div class="split-layout">
+    <!-- Left side: Text content -->
+    <div class="text-content">
+        <h1>Exploring Group Therapy</h1>
+        <p>Group therapy is a form of psychotherapy where a small group of individuals meets regularly to discuss and explore their personal experiences, emotions, and challenges under the guidance of a trained therapist.</p>
+        <p>Here are some key aspects of group therapy:</p>
+        <ol>
+            <li><strong>Shared Support:</strong> Group therapy offers a sense of belonging and support as members realize they are not alone in their struggles. It fosters a supportive community where individuals can connect with others who share similar experiences.</li>
+            <li><strong>Multiple Perspectives:</strong> Interacting with diverse group members provides opportunities to gain insight into different perspectives and approaches to coping with challenges. It encourages empathy, understanding, and learning from others' experiences.</li>
+            <li><strong>Feedback and Validation:</strong> Group members provide feedback, validation, and encouragement to each other, which can help individuals gain clarity, challenge self-defeating beliefs, and develop new coping strategies.</li>
+            <li><strong>Social Skills Development:</strong> Group therapy offers a safe space to practice communication, assertiveness, and interpersonal skills. Members can receive constructive feedback and learn to navigate social interactions more effectively.</li>
+            <li><strong>Confidentiality and Trust:</strong> Confidentiality is emphasized in group therapy, creating a safe environment where members can openly discuss their concerns without fear of judgment or breach of privacy.</li>
+        </ol>
+        <p>Overall, group therapy offers a powerful platform for personal growth, emotional healing, and building supportive relationships. It can complement individual therapy or serve as a standalone treatment option for various mental health concerns.</p>
+        
+
+        
+    </div>
+    <!-- Right side: Image -->
+    <div class="image-content">
+        <img src="https://www.clearhavenrecovery.com/wp-content/uploads/2021/04/How-we-Facilitate-a-Group-Therapy-Session.jpg" alt="GroupTherapy">
+    </div>
+</div>
+</main>
+</body>
+</html>

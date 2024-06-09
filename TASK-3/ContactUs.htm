@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- External JavaScript -->
+  <script src="scripts.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+  <title>Hobbies</title>
+  <style>
+      /* Global Reset */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #FFDDF4;
+        color: #333;
+    }
+      main{
+        background-color: #FFDDF4;
+        font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+      }
+      /* Contact information styles */
+.contact-info {
+    padding: 20px;
+    background-color: #FFDDF4;
+    border-radius: 10px;
+  }
+  
+  .contact-info h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  /* Contact form styles */
+  .contact-form {
+    max-width: 500px;
+    height: 480px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-form textarea {
+    height: 150px;
+}
+.contact-form input[type="submit"] {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #004080;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+.popup h2 {
+    margin-bottom: 10px;
+}
+.popup p {
+    margin-bottom: 20px;
+}
+.popup button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.popup button:hover {
+    background-color: #004080;
+}
+  
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Navigation menu -->
+    <nav>
+      <!-- Logo -->
+      <div class="health-logo"><a href="index.htm">
+        <h2>Health and Wellness</h2>
+        </a></div>
+      <!-- Menu items -->
+      <div class="health-menu">
+        <div class="health-menuitem"><a href="Nutrition.htm">Nutrition</a></div>
+        <div class="health-menuitem"><a href="Exercise.htm">Exercise</a></div>
+        <!-- Dropdown menu -->
+        <div class="health-menuitem health-dropdown"><a href="#">Mental Health</a><ion-icon name="arrow-dropdown"></ion-icon>
+          <div class="health-dropdown-content">
+            <!-- Mental Health items -->
+            <div class="health-dropdown-item"><a href="#">Mindfulness</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="Meditation.htm">Meditation</a></div>
+                <div class="health-submenu-item"><a href="Breathing.htm">Breathing Exercises</a></div>
+                <div class="health-submenu-item"><a href="Stress.htm">Stress Management</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Therapy</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="CBT.htm">Cognitive Behavioral Therapy</a></div>
+                <div class="health-submenu-item"><a href="GroupTherapy.htm">Group Therapy</a></div>
+                <div class="health-submenu-item"><a href="Therapist.htm">Find a Therapist</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Self-Care</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="Relaxation.htm">Relaxation Techniques</a></div>
+                <div class="health-submenu-item"><a href="Hobbies.htm">Hobbies</a></div>
+                <div class="health-submenu-item"><a href="Sleep.htm">Sleep Hygiene</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Emotional Well-being</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="Journaling.htm">Journaling</a></div>
+                <div class="health-submenu-item"><a href="Gratitude.htm">Gratitude Practices</a></div>
+                <div class="health-submenu-item"><a href="MindfulEating.htm">Mindful Eating</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Support Groups</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="OnlineGroups.htm">Online Communities</a></div>
+                <div class="health-submenu-item"><a href="LocalGroups.htm">Local Meetups</a></div>
+                <div class="health-submenu-item"><a href="PeerSupport.htm">Peer Support</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- More menu items... -->
+        <div class="health-menuitem"><a href="ContactUs.htm">Contact Us</a></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Hospital Name: Your Hospital Name</p>
+        <p>Address: 123 Hospital Street, City, Country</p>
+        <p>Contact Number: +1234567890</p>
+        <p>Email Address: info@example.com</p>
+      </div>
+    
+      <!-- Lower div containing JavaScript-enabled form -->
+      <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</main>
+
+<div class="popup" id="popup">
+    <h2>Thank You!</h2>
+    <p>Your message has been sent successfully.</p>
+    <button onclick="closePopup()">Close</button>
+</div>
+<script>
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        // Here you can add your code to send form data to server using AJAX if required
+
+        // Show the pop-up message
+        document.getElementById('popup').style.display = 'block';
+    });
+</script>
+</main>
+</body>
+</html>

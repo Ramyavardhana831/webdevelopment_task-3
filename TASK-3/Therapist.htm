@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- External JavaScript -->
+  <script src="scripts.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+  <title>Find a Therapist</title>
+  <style>
+      /* Global Reset */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #FFDDF4;
+        color: #333;
+    }
+      main{
+        background-color: #FFDDF4;
+        font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+
+      }
+      /* Split layout container */
+      .split-layout {
+          display: flex;
+          height: 100vh; /* Adjust as needed */
+      }
+
+      /* Left side: Text content */
+      .text-content {
+          flex: 1; /* Take up remaining space */
+          padding: 20px; /* Adjust as needed */
+          margin-left: 15px;
+      }
+      .text-content h1{
+        margin-top: 30px;
+        font-size:40px;
+      }
+      .text-content p{
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .text-content a {
+          text-decoration: none;
+          color: inherit; /* Inherit text color */
+      }
+
+      /* Right side: Image */
+      .image-content {
+          flex: 1; /* Take up remaining space */
+      }
+
+      .image-content img {
+          width: 600px; /* Ensure the image fills its container */
+          height:500px; /* Ensure the image fills its container */
+          object-fit: cover; /* Ensure the image covers the container */
+          margin-top: 120PX;
+          margin-left: 10px;
+          border-radius: 10%;
+      }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Navigation menu -->
+    <nav>
+      <!-- Logo -->
+      <div class="health-logo"><a href="index.htm">
+        <h2>Health and Wellness</h2>
+        </a></div>
+      <!-- Menu items -->
+      <div class="health-menu">
+        <div class="health-menuitem"><a href="Nutrition.htm">Nutrition</a></div>
+        <div class="health-menuitem"><a href="Exercise.htm">Exercise</a></div>
+        <!-- Dropdown menu -->
+        <div class="health-menuitem health-dropdown"><a href="#">Mental Health</a><ion-icon name="arrow-dropdown"></ion-icon>
+          <div class="health-dropdown-content">
+            <!-- Mental Health items -->
+            <div class="health-dropdown-item"><a href="#">Mindfulness</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="Meditation.htm">Meditation</a></div>
+                <div class="health-submenu-item"><a href="Breathing.htm">Breathing Exercises</a></div>
+                <div class="health-submenu-item"><a href="Stress.htm">Stress Management</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Therapy</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="CBT.htm">Cognitive Behavioral Therapy</a></div>
+                <div class="health-submenu-item"><a href="GroupTherapy.htm">Group Therapy</a></div>
+                <div class="health-submenu-item"><a href="Therapist.htm">Find a Therapist</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Self-Care</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="Relaxation.htm">Relaxation Techniques</a></div>
+                <div class="health-submenu-item"><a href="Hobbies.htm">Hobbies</a></div>
+                <div class="health-submenu-item"><a href="Sleep.htm">Sleep Hygiene</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Emotional Well-being</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="Journaling.htm">Journaling</a></div>
+                <div class="health-submenu-item"><a href="Gratitude.htm">Gratitude Practices</a></div>
+                <div class="health-submenu-item"><a href="MindfulEating.htm">Mindful Eating</a></div>
+              </div>
+            </div>
+            <div class="health-dropdown-item"><a href="#">Support Groups</a><ion-icon name="arrow-dropright"></ion-icon>
+              <div class="health-dropdown-submenu">
+                <div class="health-submenu-item"><a href="OnlineGroups.htm">Online Communities</a></div>
+                <div class="health-submenu-item"><a href="LocalGroups.htm">Local Meetups</a></div>
+                <div class="health-submenu-item"><a href="PeerSupport.htm">Peer Support</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- More menu items... -->
+        <div class="health-menuitem"><a href="ContactUs.htm">Contact Us</a></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+  <!-- Split layout content -->
+  <div class="split-layout">
+    <!-- Left side: Text content -->
+    <div class="text-content">
+        <h1>Find a Therapist</h1>
+<p>Finding the right therapist is an important step in your journey towards mental and emotional well-being. A therapist can provide support, guidance, and tools to help you navigate life's challenges, manage stress, and improve your overall quality of life. Here are some steps to find a therapist that suits your needs:</p>
+<ol>
+    <li><strong>Identify Your Needs:</strong> Reflect on the specific issues or concerns you want to address in therapy. Consider whether you're looking for help with anxiety, depression, relationship issues, trauma, or other mental health issues.</li>
+    <li><strong>Research Therapists:</strong> Start by researching therapists in your area. You can use online directories, professional organizations, or recommendations from friends, family, or healthcare providers.</li>
+    <li><strong>Assess Compatibility:</strong> Schedule initial consultations or phone calls with potential therapists to assess compatibility. Consider factors such as communication style, personality, and rapport with the therapist.</li>
+    <li><strong>Ask Questions:</strong> Don't hesitate to ask questions about the therapist's approach, experience, and treatment philosophy. Clarify logistical details such as scheduling, fees, insurance coverage, and confidentiality policies.</li>
+    <li><strong>Trust Your Instincts:</strong> Trust your instincts and intuition when choosing a therapist. Pay attention to how you feel during the initial consultation and whether you feel comfortable and supported.</li>
+    <li><strong>Follow Up:</strong> After your first session, reflect on whether you feel understood, heard, and respected by the therapist. If you're unsure, don't hesitate to explore other options until you find the right fit.</li>
+</ol>
+<p>Remember that finding the right therapist may take time and effort, but the benefits of therapy can be transformative and life-changing. Take the first step towards improving your mental health and well-being by reaching out for support.</p>
+
+
+        
+    </div>
+    <!-- Right side: Image -->
+    <div class="image-content">
+        <img src="https://th.bing.com/th/id/R.52757f6ae4b5c9dd4b49978039749086?rik=m12x%2b8VjxZP5Xg&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f5ee231c30d2d65468f6313dd%2ft%2f608c1211e7f96168712465d2%2f1619792404107%2ftherapy-1200x799.jpg%3fformat%3d1500w&ehk=gcxcS%2bUUVn41ilAvdC8pkciBJ0lZjQj0ji7OwuU0Nfs%3d&risl=&pid=ImgRaw&r=0" alt="Find a Therapist">
+    </div>
+</div>
+</main>
+</body>
+</html>
